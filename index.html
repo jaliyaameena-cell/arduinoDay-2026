@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>ArduinoDay2026</title>
+</head>
+
+<body>
+    <section class="home">
+        <div class="heading-box">
+            <h1 id="heading">Arduino Day - 2026</h1>
+        </div>
+    </section>
+    <section class="overview">
+        <h1>Overview</h1>
+        <p>On March 28, 2026, Tinker Space Kochi hosted Arduino Day 2026 — a full-day event where makers, students, and
+            thinkers came together to learn, build, and showcase what's possible with Arduino. The day brought together
+            a diverse mix of school students, college learners, working professionals, and hobbyists in one energetic
+            space.
+            Through talks, open sessions,flash talk and competition, participants were encouraged to move from curiosity
+            to creation — all in a beginner-friendly, community-driven atmosphere. This document captures the sessions,
+            projects, and highlights that made Arduino Day 2026 at Tinker Space a memorable day for Kochi's maker
+            community.</p>
+    </section>
+    <section class="event">
+        <h1>Event</h1>
+        <ul id="timeline">
+            <li class="work">
+                <input type="radio" class="radio" id="work1" name="radio" checked>
+                <div class="relative">
+                    <label for="work1">Welcome+Intro</label>
+                    <span class="type">talk</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/intro.png" alt="introduction">
+                    </div>
+                    <p>The day began with a warm welcome to all participants  makers, students, professionals, and
+                        first-time tinkerers who had gathered at Tinker Space for Arduino Day 2026. The opening session
+                        set the tone for what was to be a full day of learning, building, and community.
+                        Attendees were introduced to the co-organisers  TinkerSpace and MakerGram  and briefly
+                        acquainted with the people behind the event, including the speakers and facilitators who would
+                        be leading sessions through the day.
+                        Following the welcome, the structure of the program was laid out for participants:
+
+                        <br>Talks  insights and experiences shared by makers and technologists<br>
+                        <br>Open Sessions  free-form time for exploration and building<br>
+                        <br>Competition  a challenge for participants to demonstrate what they'd learned<br>
+
+                        <br>The introduction also encouraged participants to engage openly, ask questions, and make the
+                        most of the community around them. With the stage set and the energy high, Arduino Day 2026 was
+                        officially underway.<br>
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work2" name="radio">
+                <div class="relative">
+                    <label for="work2">Rethinking Arduino With Rust<br>Speakers:<br>Midlaj C<br>Anin Arafath</label>
+                    <span class="type">flash talk </span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/rust.png" alt="introduction">
+                    </div>
+                    <p>Overview:<br>
+
+                        This session introduced participants to using the Rust programming language in Arduino-based
+                        embedded systems. It focused on Rust’s safety features, memory management model, and how it
+                        compares with traditional languages like C++ in hardware programming.<br>
+
+                        <br>Key Takeaways:<br>
+                        <br>1. Why Rust?<br>
+                        <br>Provides low-level control similar to C/C++
+                        <br>Ensures memory safety without a garbage collector
+                        <br>Prevents common bugs like null pointers and use-after-free errors
+                        <br>2. Ownership Concept
+                        <br>Each value in Rust has a single owner
+                        <br>When ownership is transferred, the original variable becomes unusable
+                        <br>Memory is automatically freed when it goes out of scope
+
+                        <br>Insight:
+                        <br>This eliminates ambiguity in memory handling, unlike C++ where improper memory management
+                        can lead to runtime errors.
+
+                        <br>3. Borrowing Mechanism
+                        <br>Allows access to data without transferring ownership
+                        <br>Two types:
+                        <br>Immutable borrow (&) → read-only access
+                        <br>Mutable borrow (&mut) → allows modification temporarily
+
+                        <br>Key Rule:
+                        <br>Rust prevents simultaneous mutable and immutable access, ensuring data safety.
+
+                        <br>4. Compile-Time Safety
+                        <br>Errors are detected during compilation, not runtime
+                        <br>Prevents issues like:
+                        <br>Dangling pointers
+                        <br>Data races
+                        <br>Invalid memory access
+                        <br>5. Rust on Arduino Workflow
+                        <br>Write code in Rust
+                        <br>Build using Cargo
+                        <br>Convert to machine code
+                        <br>Flash to Arduino board
+                        <br>Execute on hardware
+                        <br>Conclusion:
+
+                        <br>The session highlighted how Rust brings modern safety guarantees to embedded systems
+                        programming. By shifting error detection to compile time and enforcing strict memory rules, Rust
+                        offers a reliable alternative to traditional embedded programming languages.
+
+                        <br>Acknowledgment:
+
+                        <br>The session provided valuable insights into the future of safe embedded development and
+                        encouraged participants to explore Rust for hardware projects.
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work3" name="radio">
+                <div class="relative">
+                    <label for="work3">Think Like a Machine: Microprocessors <br>Speaker<br>Shan Shoukath .maker</label>
+                    <span class="type">talk</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/shaan.png" alt="introduction">
+                    </div>
+                    <p>Shaan Shoukath opened with a simple but compelling idea — that every smart device, at its core,
+                        thinks the way we do. The talk walked participants through the conceptual bridge between human
+                        biology and machine logic, making hardware feel intuitive rather than intimidating.
+                        <br>How We Interact with the World drew a parallel between the human reflex loop — sensation,
+                        decision-making, action  and the fundamental input-process-output cycle that governs all
+                        computing systems.
+                        <br>Translating Biology to Hardware carried that analogy forward, mapping the reflex loop
+                        directly onto the sensor-actuator loop: a temperature sensor as input, a microcontroller chip as
+                        the brain, and an LED as the output  making the abstract feel tangible.
+                        <br>The Anatomy of a Machine Thought broke down the microcontroller itself  its CPU, RAM, ROM,
+                        I/O ports, timers, and buses  showing participants exactly where "thinking" happens inside an
+                        Arduino board.
+                        <br>From Prototype to Product zoomed out to the bigger picture, presenting a comparison of MCU,
+                        MPU, FPGA, and ASIC across speed, flexibility, cost, and scalability , giving participants a
+                        roadmap for where Arduino fits in the real world of product development.
+                        <br>The talk closed with From Code → Light , the classic Blink program , not as a trivial
+                        exercise, but as proof of concept: a few lines of code, a breadboard, and a blinking LED as the
+                        first handshake between a maker and a machine.
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work4" name="radio">
+                <div class="relative">
+                    <label for="work4">Arduino Q — What's New & Why It Matters<br>Speaker: Salman Faris . community @
+                        Screenly.io .Co-founder,MakerGram<br></label>
+                    <span class="type">talk</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/salmanka-main.png" alt="introduction">
+                    </div>
+                    <p>The session opened with a look back at Arduino's origins — built on top of the Wiring board and
+                        Processing IDE, with ATmega8 support added and the platform officially named Arduino in 2005.
+                        Founded by Massimo Banzi and a core team of five co-founders, Arduino was originally conceived
+                        for artists and students to engage with electronics. The board evolved significantly over the
+                        years, from the RS232 and Diecimila through to the Mega, Nano, LilyPad, and beyond — a lineage
+                        of over 15 distinct boards that reflected the platform's growing scope and community.
+                        <br>A notable highlight was the Arduino EK — the first Arduino manufactured in India, released
+                        on January 26, 2025, priced at around ₹800. The name pays quiet tribute to its heritage: Uno,
+                        One, Ek.
+                        <br>The talk then turned to the defining moment of October 2025 — Qualcomm's acquisition of
+                        Arduino — and what it means for the platform's future. The result is the Arduino UNO Q, the
+                        first board born from this partnership. It combines a Qualcomm Dragonwing QRB2210 MPU —
+                        quad-core Cortex-A53 at 2.0 GHz with an Adreno GPU — alongside an STM32U585 Cortex-M33 MCU and
+                        dual-band WiFi and Bluetooth 5.1. The board runs Debian Linux with Arduino sketches layered over
+                        Zephyr OS, and supports two operating modes: Single-Board Computer Mode and PC Hosted Mode.
+                        <br>A live architecture diagram demonstrated a real-world use case — a climate monitoring system
+                        using the Modulino Thermo sensor feeding data through Linux into a web dashboard — illustrating
+                        the board's capability to handle both sensing and computing on-device.
+                        <br>The session closed with Physical AI vs Edge ML — the idea of running AI models locally on
+                        hardware rather than the cloud — and a call to action around the ongoing "Invent the Future"
+                        hackathon on hackster.io, encouraging participants to fork projects, build their own, join
+                        MakerChat, and share their work with the global maker community.
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work5" name="radio">
+                <div class="relative">
+                    <label for="work5">From Prototype to Product - Scale up your arduino project<br>Mohammad
+                        Shan.maker</label>
+                    <span class="type">flash-talk</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/shaan-og.png" alt="introduction">
+                    </div>
+                    <p>The talk addressed a question many makers eventually face — what comes after the breadboard?
+                        Mohammed Shan walked participants through the process of taking an Arduino project and reshaping
+                        it into something smaller, cleaner, and closer to a real product.
+                        <br>The session introduced Printed Circuit Boards — from the humble dotted perf board used for
+                        early prototyping, to fully custom PCBs — framing them as the natural next step once a project
+                        is proven on a breadboard.
+                        <br>A key focus was the ATMEL microcontroller family — the chip family behind Arduino —
+                        specifically the ATtiny, ATmega, and ATxmega lines. The ATtiny in particular was highlighted as
+                        a way to shrink projects significantly, replacing a full Arduino board with a tiny, low-cost
+                        chip that can run the same sketches.
+                        <br>The talk then covered programming these chips without a standard Arduino board, using two
+                        methods — Arduino as ISP and FTDI — walking through the steps: flashing the ISP sketch, wiring
+                        up SPI, setting the board and clock, burning the bootloader, and finally burning the code.
+                        <br>The session closed with a look at PCB fabrication options available to makers today —
+                        JLCPCB, PCBWay, and local Fablabs — making the path from prototype to custom board feel
+                        genuinely accessible.
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work6" name="radio">
+                <div class="relative">
+                    <label for="work6">Line Following Robot Competition</label>
+                    <span class="type">competition</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/all.png" alt="introduction">
+                        <img src="images/winner.png" alt="introduction">
+                        <img src="images/robo.png" alt="introduction">
+                        <img src="images/deva-robo.png" alt="introduction">
+                        <img src="images/ending.png" alt="introduction">
+                    </div>
+                    <p>The day's competitive highlight was a Line Following Robot Challenge, with 6 teams going
+                        head-to-head to navigate an autonomous robot along a defined track in the shortest possible
+                        time.
+                        <br>Each team brought their own build, strategy, and calibration to the floor. The atmosphere
+                        was tense and energetic as robots were set down one by one, with the crowd watching every turn
+                        and correction closely.
+                        <br>At the end of the runs, one participant stood out — completing the course in 42 seconds, the
+                        fastest time of the day, claiming 1st place. In recognition of the win, he was awarded an
+                        Arduino UNO Q — the newest board in the Arduino lineup, born from the Qualcomm partnership — a
+                        fitting prize for a day built around the future of making.
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work7" name="radio">
+                <div class="relative">
+                    <label for="work7">Seed Studio x TinkerSpace: Hardware Donation Session</label>
+                    <span class="type">Unboxing</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/seedstudio1.png" alt="introduction">
+                        <img src="images/jazeelvibes.png" alt="introduction">
+                        <img src="images/shaanrocks.png" alt="introduction">
+                    </div>
+                    <p>As a special moment during the day, TinkerSpace received a hardware contribution from Seeed
+                        Studio — one of the leading open-source hardware manufacturers in the maker ecosystem. The
+                        unboxing was done live in front of participants, adding an element of excitement to the
+                        afternoon.
+                        The contribution reflected Seeed Studio's support for grassroots maker communities, and the
+                        hardware will go on to serve future workshops, sessions, and projects at TinkerSpace Kochi.
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work8" name="radio">
+                <div class="relative">
+                    <label for="work8">AI for Embedded Systems — Coding Without Coding<br>Speaker: Saheen Palayi</label>
+                    <span class="type">talk</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/ai.png" alt="introduction">
+                    </div>
+                    <p>Saheen Palayi then took the floor, drawing from a workshop he had attended at Fab26 — "How to
+                        Code Almost Anything for Hardware with LLMs" — conducted by Feng Lei (Leon) from Seeed Studio, a
+                        Fab Academy 2025 graduate. He brought those learnings directly to the Arduino Day audience.
+                        The talk began with the familiar — using tools like ChatGPT, Claude, and Gemini to generate
+                        embedded code, which is then uploaded through traditional toolchains. But the more compelling
+                        part came next: an agentic AI workflow capable of learning about the hardware, downloading
+                        toolchains, compiling firmware, uploading code, and debugging — all from a simple natural
+                        language prompt. No manual setup. No toolchain configuration. Just an idea, and an output.
+                        Live demos on the Wio Terminal illustrated the difference clearly — from a basic Blink program
+                        generated by Claude, to a fully agentic workflow using Augment AI, to a working snake game built
+                        entirely through natural language prompts.
+                        The session closed with a thought that resonated with the room: in the near future, engineers
+                        will spend their energy on system design and product thinking, while AI handles the low-level
+                        complexity beneath.
+                        Resources and demo files from the session are available at:
+                        github.com/saheenpalayi/ai-for-embedded
+                    </p>
+                </div>
+            </li>
+            <li class="work">
+                <input type="radio" class="radio" id="work9" name="radio">
+                <div class="relative">
+                    <label for="work9">Turning an Office into a Smart Workspace<br>Speaker: Muhamed Ziyad</label>
+                    <span class="type">talk</span>
+                    <span class="circle"></span>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <img src="images/ending -with.png" alt="introduction">
+                    </div>
+                    <p>Muhamed Ziyad presented a practical, real-world application of Arduino — automating a physical
+                        workspace. The talk walked through the full journey of transforming an ordinary office into a
+                        smart environment, covering the story behind the idea, the logic flow of the system, the
+                        technology stack used, and the import and integration of components. It was a grounded
+                        demonstration of how maker skills translate directly into solving everyday problems.
+                        <br>The talk took a more experimental and honest approach to making. The speaker covered a range
+                        of Arduino-powered smart hacks — including an NFC-based system and automated lighting — while
+                        also demoing a live alarm project. What set this talk apart was a dedicated segment titled
+                        "Things That Broke" — a refreshingly candid look at failures, debugging, and the reality of
+                        building hardware projects. The session closed with a Q&A, giving participants a chance to dig
+                        into both the successes and the breakdowns.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="highlight">
+        <h1>Highlights</h1>
+        <div class="gallery">
+            <img src="images/group.png" alt="Group photo">
+            <img src="images/jazeelflexing.png" alt="Jazeel flexing">
+            <img src="images/stickers.png" alt="Stickers">
+            <img src="images/china-mittay.png" alt="Snacks">
+            <img src="images/Screenshot from 2026-03-30 22-50-05.png" alt="Snacks">
+        </div>
+        <p>Arduino Day 2026 at TinkerSpace was more than just sessions and screens it was a day felt in the small moments too. All participants were welcomed with sweets, snacks, and Arduino Day stickers, a small but warm gesture that set the tone of community from the very start.</p>
+        <p>Speakers and organisers were recognised with an exclusive Arduino Day 2026 T-shirt a token of appreciation for the people who made the day possible.</p>
+        <p>From the first talk to the last robot run, the energy in the room stayed consistent  curious, collaborative, and genuinely excited about what Arduino makes possible. First-timers left with a working mental model of hardware. Experienced makers left with new ideas. Everyone left with a sticker.</p>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Arduino Day @ Tinker Space Kochi.</p>
+            <p>Made with &hearts; by the Ameena Jaliya.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
